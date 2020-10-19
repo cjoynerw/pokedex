@@ -3,10 +3,15 @@ import './App.css';
 import axios from 'axios'
 
 const App = () => {
-  const [pokemon, setPokemon] = useState('pikachu')
+  const [pokemon, setPokemon] = useState('')
   const [pokemonData, setPokemonData] = useState([])
   const [pokemonType, setPokemonType] = useState('')
   const [pokemonAbility, setPokemonAbility] = useState('')
+
+  // const i = 0;
+  // for (i = 0; i < data.abilities.length; i++) {
+  //   console.log(data.abilities.ability.name)
+  // }
 
   const getPokemon = async () => {
     const toArray = [];
