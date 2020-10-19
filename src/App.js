@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios'
+import Pokedex from './pokedex.png'
 
 const App = () => {
   const [pokemon, setPokemon] = useState('')
@@ -39,6 +40,8 @@ const App = () => {
 
   return (
     <div className="App">
+      <img src={Pokedex} alt="" className='pokedex' />
+      <div className='pokedex-info'>
       <form onSubmit={handleSubmit}>
         <label>
           <input 
@@ -50,29 +53,29 @@ const App = () => {
       {pokemonData.map((data) => {
         return(
           <div className='container'>
-            <img src={data.sprites['front_default']} alt="pokemon"/>
+            <img src={data.sprites['front_default']} alt="pokemon" className='pokemonpic'/>
             <div className='table'>
-              <div className='tableBody'></div>
                 <div className='tableRow'>
-                  <div className='tableCell'>Type</div>
+                  <h1>Type: </h1>
                   <div className='tableCell'>{ pokemonType }</div>
                 </div>
                 <div className='tableRow'>
-                  <div className='tableCell'>Height</div>
+                  <h1>Height: </h1>
                   <div className='tableCell'>{ '' }{ Math.round(data.height * 3.9) } inches</div>
                 </div>
                 <div className='tableRow'>
-                  <div className='tableCell'>Weight</div>
+                  <h1>Weight: </h1>
                   <div className='tableCell'>{ '' }{Math.round(data.weight / 4.3)} lbs</div>
                 </div>
                 <div className='tableRow'>
-                  <div className='tableCell'>Abilities</div>
+                  <h1>Ability: </h1>
                   <div className='tableCell'>{ '' }{ pokemonAbility }</div>
                 </div>
               </div>
             </div>
         )
       })}
+      </div>
     </div>
   );
 }
