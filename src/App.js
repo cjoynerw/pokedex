@@ -9,7 +9,6 @@ const App = () => {
   const [pokemonType, setPokemonType] = useState('')
   const [pokemonAbility, setPokemonAbility] = useState('')
 
-  // const i = 0;
   // for (i = 0; i < data.abilities.length; i++) {
   //   console.log(data.abilities.ability.name)
   // }
