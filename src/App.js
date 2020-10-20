@@ -28,6 +28,8 @@ const App = () => {
     }
   }
 
+  
+
   const handleChange = (e) => {
     setPokemon(e.target.value.toLowerCase())
   }
@@ -41,7 +43,7 @@ const App = () => {
     <div className="App">
       <img src={Pokedex} alt="" className='pokedex' />
       <div className='pokedex-info'>
-      <form onSubmit={handleSubmit}>
+      <form className='formid' onSubmit={handleSubmit}>
         <label>
           <input 
             type="text" 
@@ -59,11 +61,11 @@ const App = () => {
                   <div className='tableCell'>{ pokemonType }</div>
                 </div>
                 <div className='tableRow'>
-                  <h1>Height: </h1>
-                  <div className='tableCell'>{ '' }{ Math.round(data.height * 3.9) } inches</div>
+                  <h1>HT: </h1>
+                  <div className='tableCell'>{ '' }{ Math.round(data.height * 0.328084) }'</div>
                 </div>
                 <div className='tableRow'>
-                  <h1>Weight: </h1>
+                  <h1>WT: </h1>
                   <div className='tableCell'>{ '' }{Math.round(data.weight / 4.3)} lbs</div>
                 </div>
                 <div className='tableRow'>

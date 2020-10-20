@@ -7,6 +7,7 @@
   height: 100vh;
   width: 100%;
   background-color: black;
+  font-family: 'Press Start 2P', cursive;
   /* background: url(./pokeash.jpg);
   background-size: cover; */
 }
@@ -36,22 +37,21 @@ input {
 }
 .pokemonpic {
   position: absolute;
-  top: 40%;
-  left: 15%;
+  top: 36%;
+  left: 34%;
   height: 13em;
-  width: 13em;
+  max-width: 13em;
 }
 h1 {
   font-size: 1em;
 }
 .table {
   position: absolute;
-  top: 45%;
-  left: 58%;
+  top: 38%;
+  left: 54%;
   height: 25vh;
-  width: 16vw;
-  font-size: x-large;
-  text-align: center;
+  max-width: 16vw;
+  font-size: large;
 }
 .tableRow {
   display: flex;
