@@ -51,10 +51,16 @@ const App = () => {
             placeholder='Enter Pokemon name'/>
         </label>
       </form>
+      <div className='mobile-pokedex'>
+        <div className='mobile-pokedis'></div>
+        <div className='mobile-pokestat'></div>
+      </div>
       {pokemonData.map((data) => {
         return(
           <div className='container'>
+            <div className='piccont'>
             <img src={data.sprites['front_default']} alt="pokemon" className='pokemonpic'/>
+            </div>
             <div className='table'>
                 <div className='tableRow'>
                   <h1>Type: </h1>
