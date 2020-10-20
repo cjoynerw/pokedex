@@ -16,8 +16,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 65vh;
-  width: 45vw;
+  height: 600px;
+  width: 850px;
 }
 
 form {
@@ -35,23 +35,27 @@ input {
   border-radius: 0.5rem;
   font-family: 'Press Start 2P', cursive;
 }
-.pokemonpic {
+.container {
   position: absolute;
-  top: 36%;
-  left: 34%;
+  top: 37%;
+  left: 52%;
+  transform: translate(-50%, -0%);
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  /* background-color: rgba(0, 0, 0, 0.438); */
+}
+.pokemonpic {
   height: 13em;
-  max-width: 13em;
+  width: 13em;
 }
 h1 {
   font-size: 1em;
 }
 .table {
-  position: absolute;
-  top: 38%;
-  left: 54%;
-  height: 25vh;
-  max-width: 16vw;
   font-size: large;
+  right: 0;
+  /* margin: 0 0 0 300px; */
 }
 .tableRow {
   display: flex;
